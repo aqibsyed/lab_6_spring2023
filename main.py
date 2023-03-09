@@ -10,7 +10,14 @@ def encode(my_pass):
 
 
 def decode(my_pass):
-    pass
+    new_pass = ''
+    for x in str(my_pass):
+        x = int(x) - 3
+        if x < 0:
+            x += 10
+        new_pass = new_pass + str(x)
+
+    return new_pass
 
 
 if __name__ == "__main__":
