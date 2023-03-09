@@ -26,7 +26,7 @@ if __name__ == "__main__":
         elif option == '2':
             print(
                 f"The encoded password is {encode(my_pass)}, and the original password is {decode(encode(my_pass))}.\n")
-
+# comment
         elif option == '3':
             break
         else:
